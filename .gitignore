@@ -1,10 +1,96 @@
-# Python-generated files
+# ==========================================
+# Python & Byte-Code
+# ==========================================
 __pycache__/
-*.py[oc]
-build/
-dist/
-wheels/
-*.egg-info
+*.py[cod]
+*$py.class
+*.so
 
-# Virtual environments
-.venv
+# ==========================================
+# uv & Virtual Environments
+# ==========================================
+# Ignore the virtual environment created by uv
+.venv/
+venv/
+ENV/
+env/
+
+# Note: Keep uv.lock in version control if you want 
+# reproducible builds for your application.
+
+# ==========================================
+# Streamlit Internal Files
+# ==========================================
+# Streamlit user configuration and local state
+.streamlit/config.toml
+.streamlit/secrets.toml
+
+# Exception: If you want to commit shared theme or general config settings,
+# comment out .streamlit/config.toml above. NEVER commit secrets.toml.
+
+# ==========================================
+# Distribution / Packaging
+# ==========================================
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ==========================================
+# Testing & Coverage
+# ==========================================
+.pytest_cache/
+.coverage
+.coverage.*
+nosetests.xml
+coverage.xml
+*.cover
+*.py.class
+.hypothesis/
+.ruff_cache/
+.mypy_cache/
+
+# ==========================================
+# Environment Variables & Secrets
+# ==========================================
+.env
+.env.*
+!.env.example
+
+# ==========================================
+# IDEs & System Files
+# ==========================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# VS Code & JetBrains
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
