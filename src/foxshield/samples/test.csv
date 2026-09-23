@@ -1,6 +1,0 @@
-Employee_Name,Employee_ID,Department,Bank_Account_Number,Password,Phone_Number,Email,Notes
-Ramesh Kumar,EMP001,HR,1234567890123456,Secret@123,+91-9876543210,ramesh.kumar@company.internal,CONFIDENTIAL - Internal Use Only
-Priya Sharma,EMP002,Finance,9876543210987654,Priya#2024,+91-8765432109,priya.sharma@company.internal,Draft - Not for Distribution
-Amit Patel,EMP003,IT,5678901234567890,Amit$ecure,+91-7654321098,amit.patel@company.internal,Restricted Access
-Sunita Desai,EMP004,Admin,3456789012345678,Sunita@2024,+91-6543210987,sunita.desai@company.internal,Private - Do Not Share
-Vikram Singh,EMP005,Legal,2345678901234567,Vikram!Legal,+91-5432109876,vikram.singh@company.internal,SENSITIVE - Proprietary

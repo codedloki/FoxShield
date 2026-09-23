@@ -75,7 +75,7 @@ def scan(file_bytes: bytes, filename: str, filetype: str) -> Dict:
         text = extract_text_from_csv(file_bytes=file_bytes)
     else:
         return {"status": "ERROR", "title": "Invalid Filetype", "reason": "Only PDF, XLSX, CSV supported."}
-    
+    time.sleep(4)
     analyzer_result = analyzer.analyze(
         text=text,
         language="en",
