@@ -1,0 +1,19 @@
+services:
+  backend:
+    build: .
+    command: uvicorn foxshield.api.main:app --host 0.0.0.0 --port 8000
+    ports: ["8000:8000"]
+    volumes: ["./data:/app/data"]
+    networks: [offline]
+  frontend:
+    build: .
+    command: streamlit run src/foxshield/frontend/app.py --server.address 0.0.0.0 --server.port 8501
+    environment: ["FOXSHIELD_API_URL=http://backend:8000"]
+    ports: ["8501:8501"]
+    depends_on: [backend]
+    volumes: ["./data:/app/data"]
+    networks: [offline]
+networks:
+  offline:
+    driver: bridge
+    internal: true
