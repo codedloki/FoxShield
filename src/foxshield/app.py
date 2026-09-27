@@ -28,14 +28,13 @@ scanner_page = st.Page(
     icon="🔍"
 )
 
-about_page = st.Page(
-    page="pages/3_about.py",
-    title="About",
-    icon="ℹ️"
+audit_page = st.Page(
+    page="pages/3_audit.py",
+    title="Audit",
+    icon="🛡️"
 )
-
 # 4. Pass the page list to st.navigation
-pg = st.navigation([home_page, scanner_page, about_page])
+pg = st.navigation([home_page, scanner_page, audit_page])
 
 # 5. Run the navigation routing
 pg.run()
